@@ -1,0 +1,47 @@
+// Переходы
+
+transition: 3s
+//задержка перехода
+transition-delay: 1s
+=====================================
+Переход
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s; //Переход нужно задать в блоке без :hover чтобы сработало в обе стороны
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+}
+
+
+Переход + Трансформация
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+
+
+Использование свойства сокращения перехода
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+div:hover {
+  width: 300px;
+}

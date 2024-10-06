@@ -1,0 +1,3 @@
+i, textarea, select, label, input, br, abbr,  tt, sup, sub, strong, strike,
+
+span,  em, dfn, cite, code

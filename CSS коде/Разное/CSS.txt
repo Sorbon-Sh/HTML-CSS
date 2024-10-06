@@ -1,0 +1,73 @@
+Category css code
+
+
+
+1)<flex>
+
+
+
+In here write flex code css
+
+
+</flex>
+
+
+
+
+
+2)<position>
+
+position code css
+
+
+
+and we have: 
+
+top
+bottom
+right
+left
+
+
+margin code
+
+padding code
+
+position  for text
+
+<position>
+
+
+
+
+
+3)<display>
+
+display css code
+
+<display>
+
+
+
+4) <style code and size>
+
+
+ size number: 1px -1px 1% 1rem
+</style code and size>
+
+
+
+
+6) <webkits>
+
+webkit code
+
+</webkits>
+
+
+
+7) <overflow>
+
+overflow code css
+
+</overflow>

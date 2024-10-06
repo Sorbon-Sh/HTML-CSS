@@ -1,0 +1,21 @@
+.article{
+
+color: // задать цвет можно и празрачный
+
+text-align:
+text-align-last:
+text-direction:
+vertical-align:
+text-transform:
+text-shadow:
+
+
+//Интервал между текстами
+
+text-indent:
+letter-spacing:
+line-height:
+word-spacing:
+white-space:
+
+}

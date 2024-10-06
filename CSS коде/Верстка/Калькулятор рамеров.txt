@@ -1,0 +1,7 @@
+.container{
+ width: min(500px, 70%);
+}
+
+.container{
+ width: clamp("min"400px, "preferred"70%, "max"500px)
+ }

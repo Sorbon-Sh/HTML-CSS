@@ -1,0 +1,9 @@
+.button:not(:first-child){
+ background-color: blue;  //все корме первой кнопки будут синего цвета
+}
+
+
+button:has(svg){
+ background-clip: text;  // все кнопки в которых есть тег svg
+ }
+

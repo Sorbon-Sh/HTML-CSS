@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(67, 136, 196);
+}
+/* Устанавливаем 3-D на контейнер  (Трансформируем)*/
+.container{
+    transform-style: preserve-3d;
+    transform: perspective(1000px); /* Сколько ростояный близко */
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    border: 2px solid greenyellow;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.item{
+ width: 10%;
+ height: 100%;
+ background-color: aqua;   
+}
+
+
+.container .item{
+    transition: .5s;  /* Любое изменения блока делает с 0.5s */
+    filter: brightness(0)
+}
+
+.container .item:hover{
+    filter: brightness(1);
+    /* Трансформируем элементы по оси Z */
+    transform: translateZ(100px);
+}
+/* Так можно делать эффект на элементы дочерных */
+.container .item:hover + *{
+    filter: brightness(0.6);
+    transform: translateZ(70px) rotateY(40deg);  /* Измеряется по (deg) */
+   
+}
+/*Вместо .item можно написать (*)  */
+.container .item:hover + * + *{
+    filter: brightness(0.6);
+    transform: translateZ(50px) rotateY(20deg);  
+    
+}
+
+/* использовать has() для Трансформации с лево*/
+.container .item:has( + *:hover ){
+    filter: brightness(0.6);
+    transform: translateZ(70px) rotateY(-40deg);
+}
+
+.container .item:has( + * +*:hover ){
+    filter: brightness(0.6);
+    transform: translateZ(50px) rotateY(-20deg);
+}

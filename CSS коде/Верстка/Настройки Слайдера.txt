@@ -1,0 +1,12 @@
+.wrapper{
+display: flex;
+gap: 20px;
+width: 300px;
+overflow-x: scroll;
+scroll-snap-type: x mandatory //proximity;
+}
+
+.card{
+scroll-snap-align: center;
+box-sizing: border-box;
+}

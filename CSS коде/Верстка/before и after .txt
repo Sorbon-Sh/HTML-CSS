@@ -1,0 +1,20 @@
+h1{
+position: relative; // в пределах h1
+width: max-content // нужен чтобы объект занял только всю ширину h1 а не за её пределами
+}
+
+h1::after{
+ content: '//иконки, изображение, какието объекты';
+ position: absolute; // показать объект в h1
+ 
+ // и дальше создание блоков,  эелементов дизайнов и тд.
+ width: 10px;
+ height: 10px;
+ bottom: 0; // управление блоком или элементом, top right тоже
+ left: 0; // управление блоком или элементом, top right тоже
+ background-color: blue;
+ border-radius: 10px;
+ }
+
+  также с  ::before
+ 

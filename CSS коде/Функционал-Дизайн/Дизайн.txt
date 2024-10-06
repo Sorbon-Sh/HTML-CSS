@@ -1,0 +1,13 @@
+.item{
+box-shadow:
+transition:
+animation: 
+text-shadow: 
+background:
+color:
+border:
+
+==========
+:hover
+:focus
+}
